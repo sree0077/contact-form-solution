@@ -1,27 +1,49 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 💬 Frontend Mentor - Contact Form Solution
 
-## Available Scripts
+This is a solution to the [Contact Form challenge](https://www.frontendmentor.io/challenges/contact-form-UoMq0I3q6) on Frontend Mentor. It’s a great exercise in form validation, accessibility, and responsive UI design.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📑 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Overview](#overview)
+- [The Challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Live Links](#live-links)
+- [My Process](#my-process)
+- [Built With](#built-with)
+- [What I Learned](#what-i-learned)
+- [Continued Development](#continued-development)
+- [Useful Resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### Link
+## 🔍 Overview
 
-https://sree0077.github.io/contact-form-solution/
+This project is a fully responsive, accessible contact form built with React and styled using Tailwind CSS. It features form validation, keyboard accessibility, screen reader support, and success/error feedback via toast notifications.
 
+---
 
+## ✅ The Challenge
 
+Users should be able to:
 
-### screenshots
+- Submit the form and receive a success toast on successful submission
+- See validation messages if:
+  - A required field is left empty
+  - The email format is incorrect
+- Complete the form using only a keyboard
+- Have screen reader announcements for inputs, error messages, and success messages
+- Experience a responsive layout across all screen sizes
+- View hover and focus states for all interactive elements
+
+---
+
+## 🖼️ Screenshot
+
 
 ![Screenshot 2025-04-18 115423](https://github.com/user-attachments/assets/0281429e-e9ec-4ffe-a5c2-7152a9a571f4)
 
@@ -30,60 +52,67 @@ https://sree0077.github.io/contact-form-solution/
 ![Screenshot 2025-04-18 115502](https://github.com/user-attachments/assets/cef2b9b9-e3ba-448a-894e-aa316ab90290)
 
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔗 Live Links
 
-### `npm run build`
+- **💻 Solution Repository:** [GitHub](https://github.com/sree0077/contact-form-solution)
+- **🚀 Live Site:** [View Live](https://sree0077.github.io/contact-form-solution)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔨 My Process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. HTML Structure
+- Set up a semantic layout for accessibility and clarity.
 
-### `npm run eject`
+### 2. Styling
+- Used Tailwind CSS for utility-first styling and responsive design.
+- Ensured mobile-first development for best UX on all devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Interactivity
+- Built with React functional components and hooks.
+- Managed state using `useState` for form fields and error handling.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Accessibility
+- Ensured keyboard navigability and screen reader support.
+- Used ARIA attributes where appropriate.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧱 Built With
 
-## Learn More
+- Semantic **HTML5**
+- **React** (with hooks)
+- **Tailwind CSS**
+- **Flexbox**
+- **React Toastify** (for success messages)
+- **Mobile-first workflow**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧠 What I Learned
 
-### Code Splitting
+- Handling **real-time form validation** in React
+- Improving **accessibility** with ARIA attributes and screen reader compatibility
+- Using **toast notifications** to enhance UX
+- Applying **responsive design** using Tailwind breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```js
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
 
